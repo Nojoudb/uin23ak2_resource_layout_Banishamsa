@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,900;1,600;1,900&display=swap'); 
+/*  kilde for fargekoder:https://www.rapidtables.org/no/web/color/html-color-codes.html */
+
+
+/* jeg setter farger for å få tak i dem når jeg trenger dem senere i koden  */
+:root {
+    --blue: #00ced1;
+    --white: #ffffff;
+    --black: #5f5f5f;
+    --sølv: #C0C0C0;	
+    --grå:#808080;
+    --dimgray:#696969;
+    --maxwidth: 1200px;
+}
+
+
+  body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    width: 1080px;
+}
+
+  h1 {
+    color:#5f5f5f;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    border-style: groove;
+    width: 75%;
+    height: 100px;
+    background-color: rgb(242, 242, 242);
+    font-family:sans-serif ;
+    text-transform: uppercase;
+    background-color: var(--white);
+    font-display: center;
+    
+    
+  }
+
+
+div.container{
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    background-color: var(--white);
+
+}
+
+nav{
+   position: relative;
+   left: -3.3%;
+   width: 100%;
+   background-color: var(--with);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+ 
+    
+}
+
+nav button:hover {
+    color: var(--black);
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+nav button{
+color: var(--black);
+border-style: groove;
+border-bottom: 1px solid var(--blue);
+padding: 1rem;
+text-transform: uppercase;
+}
+
+
+.mainMenuItem:hover .open{
+    position: fixed;
+    top: auto;
+    display: block;
+    padding: 1rem;
+    border-style: groove;
+    width: 53%;
+    border-top:5px solid var(--blue);
+    height: 50%;
+    color: var(--dimgray);
+    flex-wrap: wrap;
+
+   }
+
+div.open{
+    display: none;
+
+}
+
+  nav {
+    display: block;
+    display: flex;
+  }
+  
+
+   @media only screen and (max-width: 950px) {}
+     header{
+    display:block;
+
+    }
+    
+    @media only screen and (max-width: 550px) {
+      
+ 
+        main {
+          flex-wrap: wrap; 
+          display: flex;
+        } 
+         .mainMenuItem:hover .open 
+
+         {
+          flex-direction: column;
+        } 
+        } 
+    
+
+     @media screen and (max-width: 480px){
+
+            nav { 
+                    flex-direction: column;
+                    flex-wrap: wrap;
+           
+    
+               }
+           
+            
+           .mainMenuItem:hover .open {
+                position: fixed;
+               flex-wrap: wrap;
+               flex-direction: column;
+               top: auto;
+               padding: 1rem;
+               border-style: groove;
+               width: 86.5%;
+               border-top: 5px solid var(--aqua);
+               flex-direction: column;
+           
+           } } 
+  
+    
+  
